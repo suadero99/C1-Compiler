@@ -3,6 +3,8 @@
 #include <fstream>
 #include <string>
 #include <map>
+#include <sstream>
+
 
 using namespace std;
 
@@ -57,8 +59,6 @@ namespace C_1{
 
         //retorno de tokens al leer
         int yylex();
-        
-        int charToColumn();//se puede quitae
         void printTTrans();
         int token(int q);
         string getYytext();   

@@ -18,10 +18,11 @@ int main(int argc, char *argv[]){
     int token = lexer.yylex();
 
     while(token != 0){
-        cout<< token << ", " << lexer.getYytext() << endl;
+        cout<<"token: "<< token << ", " << lexer.getYytext() << endl;
         token = lexer.yylex();
     }
     
     lexer.closeFile();
+   
     return 0;
 }
